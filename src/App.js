@@ -64,7 +64,7 @@ export default function App() {
     };
     const updateTask = item => {
         const currentTasks = Object.assign({},tasks);
-        currentTasks['text']=item;
+        currentTasks[item.id]=item;
         storeData(currentTasks);
     };
     const [isReady, setIsReady] = useState(false);

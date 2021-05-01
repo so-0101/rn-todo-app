@@ -23,7 +23,7 @@ const Contents = styled.Text`
 const Task = ({item, deleteTask, toggleTask, updateTask}) => {
     const [isEditing, setIsEditing] = useState(false);
     const [text, setText] = useState(item.text);
-    const _onSubmit = (item) => {
+    const _onSubmit = () => {
         if(isEditing){
             const updateItem = Object.assign({},item);
             updateItem['text']=text;
